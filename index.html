@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALGO-LEGO - Accueil</title>
+    <link rel="icon" href="../Images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="index.html">
+          <img
+            src="../Images/logo.png"
+            alt="Logo ALGO-LEGO"
+            class="site-logo"
+          />
+        </a>
+        <span class="site-title">ALGO-LEGO</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="boutique.html">Boutiques</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-video">
+        <video id="bgVideo" autoplay muted loop playsinline>
+          <source src="../smartlego.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-content">
+          <h1>Bienvenue chez ALGO-LEGO</h1>
+          <p>Découvrez notre univers de briques</p>
+        </div>
+
+        <button id="soundBtn" class="mute-btn">
+          <i class="fas fa-volume-xmark"></i>
+        </button>
+      </section>
+
+      <section class="container">
+        <h2>Les sorties du moment</h2>
+        <div class="carousel-wrapper">
+          <button class="nav-btn prev">❮</button>
+
+          <div class="carousel-window">
+            <div class="product-row">
+              <article class="card">
+                <div class="image-box">
+                  <img src="../Images/starwars3.jpeg" alt="Lego Star Wars" />
+                </div>
+                <div class="price">109.99 €</div>
+              </article>
+              <article class="card">
+                <div class="image-box">
+                  <img
+                    src="../Images/harrypotter2.jpeg"
+                    alt="Lego Harry Potter"
+                  />
+                </div>
+                <div class="price">14.29 €</div>
+              </article>
+              <article class="card">
+                <div class="image-box">
+                  <img src="../Images/lambo.jpeg" alt="Lego Technic" />
+                </div>
+                <div class="price">39.99 €</div>
+              </article>
+              <article class="card">
+                <div class="image-box">
+                  <img src="../Images/city.jpg" alt="Lego City" />
+                </div>
+                <div class="price">59.99 €</div>
+              </article>
+              <article class="card">
+                <div class="image-box">
+                  <img src="../Images/ninjago.png" alt="Lego Ninjago" />
+                </div>
+                <div class="price">89.90 €</div>
+              </article>
+              <article class="card">
+                <div class="image-box">
+                  <img src="../Images/marvel2.jpeg" alt="Lego Marvel" />
+                </div>
+                <div class="price">29.99 €</div>
+              </article>
+            </div>
+          </div>
+          <button class="nav-btn next">❯</button>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2>Nos Produits Phares</h2>
+        <div class="product-grid">
+          <article class="card">
+            <div class="image-box">
+              <img src="../Images/starwars3.jpeg" alt="C-3PO" />
+            </div>
+            <div class="card-info">
+              <h3>C-3PO™ Collector</h3>
+              <p class="theme-tag">Star Wars</p>
+              <div class="price-row">
+                <span class="price">109.99 €</span>
+                <button class="add-cart-btn">+</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="image-box">
+              <img src="../Images/lambo.jpeg" alt="Lamborghini" />
+            </div>
+            <div class="card-info">
+              <h3>Lamborghini Huracán</h3>
+              <p class="theme-tag">Technic</p>
+              <div class="price-row">
+                <span class="price">39.99 €</span>
+                <button class="add-cart-btn">+</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="image-box">
+              <img src="../Images/harrypotter3.jpeg" alt="Ford Anglia" />
+            </div>
+            <div class="card-info">
+              <h3>Ford Anglia Volante</h3>
+              <p class="theme-tag">Harry Potter</p>
+              <div class="price-row">
+                <span class="price">14.99 €</span>
+                <button class="add-cart-btn">+</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="image-box">
+              <img src="../Images/fusee.jpeg" alt="NASA Artemis" />
+            </div>
+            <div class="card-info">
+              <h3>Fusée SLS Artemis</h3>
+              <p class="theme-tag">Technic</p>
+              <div class="price-row">
+                <span class="price">49.99 €</span>
+                <button class="add-cart-btn">+</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="lego-slider-section">
+        <div class="container">
+          <div class="lego-slider-wrapper">
+            <div class="lego-slide active">
+              <div class="lego-slide-text">
+                <span class="badge-slider">Nouveautés</span>
+                <h2>Étendez votre galaxie LEGO® Star Wars™</h2>
+                <p>
+                  Précommandez les nouveaux sets compatibles et ajoutez des
+                  briques interactives.
+                </p>
+                <a href="catalogue.html" class="lego-btn">Précommande →</a>
+              </div>
+              <div class="lego-slide-image">
+                <img src="../Images/LEGO-STARWARS.png" alt="Lego Star Wars" />
+              </div>
+            </div>
+
+            <div class="lego-slide">
+              <div class="lego-slide-text">
+                <span class="badge-slider">Éducation</span>
+                <h2>Découvrez les merveilles de la science</h2>
+                <p>
+                  LEGO® Education permet aux enfants d'allier leurs passions et
+                  la science pour une toute nouvelle façon de jouer.
+                </p>
+                <a href="catalogue.html" class="lego-btn"
+                  >Visiter la boutique →</a
+                >
+              </div>
+              <div class="lego-slide-image">
+                <img src="../Images/LEGO_EDUCATION.png" alt="Lego Education" />
+              </div>
+            </div>
+          </div>
+
+          <div class="progress-container">
+            <div class="progress-pill active">
+              <div class="progress-bar"></div>
+            </div>
+            <div class="progress-pill">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" style="margin-top: 60px">
+        <h2>Nos Offres du Moment</h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-img">
+              <img src="../Images/porsche.jpeg" alt="Promo Porsche" />
+              <span class="promo-tag">-30%</span>
+            </div>
+            <div class="news-content">
+              <h3>Offre Flash : Porsche 911</h3>
+              <p>
+                Profitez d'une réduction exceptionnelle sur ce modèle collector
+                Technic.
+              </p>
+              <a href="catalogue.html" class="read-more">Voir l'offre →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-img">
+              <img src="../Images/harrypotter2.jpeg" alt="Promo Harry Potter" />
+              <span class="promo-tag">2 achetés = 1 offert</span>
+            </div>
+            <div class="news-content">
+              <h3>Magie à Poudlard</h3>
+              <p>
+                Pour tout achat de deux sets Harry Potter, recevez une figurine
+                mystère.
+              </p>
+              <a href="catalogue.html" class="read-more">En profiter →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-img">
+              <img src="../Images/city.jpg" alt="Promo City" />
+              <span class="promo-tag">Nouveauté</span>
+            </div>
+            <div class="news-content">
+              <h3>Lego City s'agrandit</h3>
+              <p>Découvrez les nouveaux sets de la gamme Police et Pompiers.</p>
+              <a href="catalogue.html" class="read-more">Découvrir →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <img
+            src="../Images/logo.png"
+            alt="ALGO-LEGO Logo"
+            class="footer-logo"
+          />
+          <button class="region-btn">
+            <i class="fas fa-location-dot"></i> France
+          </button>
+          <ul class="footer-links-list">
+            <li><a href="#">Cartes-cadeaux</a></li>
+            <li><a href="catalogue.html">Catalogues ALGO-LEGO</a></li>
+            <li><a href="boutique.html">Trouve un ALGO-LEGO Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>À PROPOS DE NOUS</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">À propos du Groupe ALGO-LEGO</a></li>
+            <li><a href="#">Nouveautés ALGO-LEGO®</a></li>
+            <li><a href="#">Durabilité</a></li>
+            <li><a href="#">Transparence de la chaîne</a></li>
+            <li><a href="#">Certification produit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>AIDE</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html">Contacte-nous</a></li>
+            <li><a href="#">Instructions de montage</a></li>
+            <li><a href="#">Pièces manquantes</a></li>
+            <li><a href="#">Expédition et retours</a></li>
+            <li><a href="#">Modes de paiement</a></li>
+            <li><a href="#">Conditions Générales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>NOS PARTENAIRES</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">LEGO® Education</a></li>
+            <li><a href="#">LEGO Ideas</a></li>
+            <li><a href="#">LEGO Foundation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <span>SUIS-NOUS</span>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="copyright-bar">
+        <p>
+          © 2026 ALGO-LEGO. Tous droits réservés. Politique de confidentialité |
+          Cookies
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
