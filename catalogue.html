@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALGO-LEGO - Catalogue</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="icon" href="../Images/logo.png" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="accueil.html">
+          <img
+            src="../Images/logo.png"
+            alt="Logo ALGO-LEGO"
+            class="site-logo"
+          />
+        </a>
+        <span class="site-title">ALGO-LEGO</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="catalogue.html" class="active">Catalogue</a></li>
+          <li><a href="boutique.html">Boutiques</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="catalogue-hero">
+        <h1>Notre Catalogue Complet</h1>
+        <p>Trouvez la brique qu'il vous manque</p>
+      </section>
+
+      <div class="container catalogue-layout">
+        <aside class="sidebar-filters">
+          <div class="filter-group">
+            <h3>Thèmes</h3>
+            <ul>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="category"
+                    value="starwars"
+                  />
+                  Star Wars</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="category"
+                    value="harrypotter"
+                  />
+                  Harry Potter</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="category"
+                    value="technic"
+                  />
+                  Technic</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="category"
+                    value="marvel"
+                  />
+                  Marvel</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="category"
+                    value="city"
+                  />
+                  City</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="category"
+                    value="ninjago"
+                  />
+                  Ninjago</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="filter-group">
+            <h3>Prix</h3>
+            <ul>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="price"
+                    value="small"
+                  />
+                  Moins de 50€</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="price"
+                    value="medium"
+                  />
+                  50€ - 150€</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    class="filter-checkbox"
+                    data-type="price"
+                    value="large"
+                  />
+                  Plus de 150€</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button class="filter-btn" id="reset-btn">
+            Réinitialiser les filtres
+          </button>
+        </aside>
+
+        <section class="catalogue-content">
+          <div class="catalogue-toolbar">
+            <span id="product-count"><strong>12</strong> produits trouvés</span>
+            <select id="sort-select" class="sort-select">
+              <option value="defaut">Pertinence</option>
+              <option value="prix-croissant">Prix croissant</option>
+              <option value="prix-decroissant">Prix décroissant</option>
+            </select>
+          </div>
+
+          <div class="product-grid" id="catalogue-grid">
+            <article
+              class="card product-item"
+              data-category="technic"
+              data-price="49.99"
+            >
+              <div class="image-box">
+                <img src="../Images/fusee.jpeg" alt="Lego Technic Artemis" />
+              </div>
+              <div class="card-info">
+                <h3>Fusée SLS NASA Artemis</h3>
+                <p class="theme-tag">Technic</p>
+                <div class="price-row">
+                  <span class="price">49.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="harrypotter"
+              data-price="14.29"
+            >
+              <div class="image-box">
+                <img src="../Images/harrypotter2.jpeg" alt="Lego HP Hagrid" />
+              </div>
+              <div class="card-info">
+                <h3>Hagrid et Harry - Privet Drive</h3>
+                <p class="theme-tag">Harry Potter</p>
+                <div class="price-row">
+                  <span class="price">14.29 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="harrypotter"
+              data-price="14.99"
+            >
+              <div class="image-box">
+                <img
+                  src="../Images/harrypotter3.jpeg"
+                  alt="Lego HP Ford Anglia"
+                />
+              </div>
+              <div class="card-info">
+                <h3>La Ford Anglia Volante</h3>
+                <p class="theme-tag">Harry Potter</p>
+                <div class="price-row">
+                  <span class="price">14.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="technic"
+              data-price="39.99"
+            >
+              <div class="image-box">
+                <img
+                  src="../Images/lambo.jpeg"
+                  alt="Lego Technic Lamborghini"
+                />
+              </div>
+              <div class="card-info">
+                <h3>Lamborghini Huracán Tecnica</h3>
+                <p class="theme-tag">Technic</p>
+                <div class="price-row">
+                  <span class="price">39.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="technic"
+              data-price="7.99"
+            >
+              <div class="image-box">
+                <img
+                  src="../Images/tracteur.jpeg"
+                  alt="Lego Technic Tractopelle"
+                />
+              </div>
+              <div class="card-info">
+                <h3>Le Tractopelle</h3>
+                <p class="theme-tag">Technic</p>
+                <div class="price-row">
+                  <span class="price">7.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="technic"
+              data-price="911.99"
+            >
+              <div class="image-box">
+                <img src="../Images/porsche.jpeg" alt="Lego Technic Porsche" />
+              </div>
+              <div class="card-info">
+                <h3>Porsche 911 GT3 RS</h3>
+                <p class="theme-tag">Technic</p>
+                <div class="price-row">
+                  <span class="price">911.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="starwars"
+              data-price="1289.25"
+            >
+              <div class="image-box">
+                <img
+                  src="../Images/starwars2.jpeg"
+                  alt="Lego Star Wars AT-AT"
+                />
+              </div>
+              <div class="card-info">
+                <h3>AT-AT™ Walker</h3>
+                <p class="theme-tag">Star Wars</p>
+                <div class="price-row">
+                  <span class="price">1 289.25 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="starwars"
+              data-price="109.99"
+            >
+              <div class="image-box">
+                <img
+                  src="../Images/starwars3.jpeg"
+                  alt="Lego Star Wars C-3PO"
+                />
+              </div>
+              <div class="card-info">
+                <h3>C-3PO™ Droïde à construire</h3>
+                <p class="theme-tag">Star Wars</p>
+                <div class="price-row">
+                  <span class="price">109.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="marvel"
+              data-price="29.99"
+            >
+              <div class="image-box">
+                <img src="../Images/marvel2.jpeg" alt="Lego Marvel Doc Ock" />
+              </div>
+              <div class="card-info">
+                <h3>Combat : Spider-Man vs Ock</h3>
+                <p class="theme-tag">Marvel</p>
+                <div class="price-row">
+                  <span class="price">29.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="marvel"
+              data-price="9.99"
+            >
+              <div class="image-box">
+                <img
+                  src="../Images/marvel3.jpeg"
+                  alt="Lego Marvel Ghost Rider"
+                />
+              </div>
+              <div class="card-info">
+                <h3>Spider-Man vs Ghost Rider</h3>
+                <p class="theme-tag">Marvel</p>
+                <div class="price-row">
+                  <span class="price">9.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="city"
+              data-price="59.99"
+            >
+              <div class="image-box">
+                <img src="../Images/city.jpg" alt="Lego City" />
+              </div>
+              <div class="card-info">
+                <h3>Commissariat de Police</h3>
+                <p class="theme-tag">City</p>
+                <div class="price-row">
+                  <span class="price">59.99 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+            <article
+              class="card product-item"
+              data-category="ninjago"
+              data-price="89.90"
+            >
+              <div class="image-box">
+                <img src="../Images/ninjago.png" alt="Lego Ninjago" />
+              </div>
+              <div class="card-info">
+                <h3>Temple Ninja</h3>
+                <p class="theme-tag">Ninjago</p>
+                <div class="price-row">
+                  <span class="price">89.90 €</span
+                  ><button class="add-cart-btn">+</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <img
+            src="../Images/logo.png"
+            alt="ALGO-LEGO Logo"
+            class="footer-logo"
+          />
+          <button class="region-btn">
+            <i class="fas fa-location-dot"></i> France
+          </button>
+          <ul class="footer-links-list">
+            <li><a href="#">Cartes-cadeaux</a></li>
+            <li><a href="catalogue.html">Catalogues ALGO-LEGO</a></li>
+            <li><a href="boutique.html">Trouve un ALGO-LEGO Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>À PROPOS DE NOUS</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">À propos du Groupe ALGO-LEGO</a></li>
+            <li><a href="#">Nouveautés ALGO-LEGO®</a></li>
+            <li><a href="#">Durabilité</a></li>
+            <li><a href="#">Transparence de la chaîne</a></li>
+            <li><a href="#">Certification produit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>AIDE</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html">Contacte-nous</a></li>
+            <li><a href="#">Instructions de montage</a></li>
+            <li><a href="#">Pièces manquantes</a></li>
+            <li><a href="#">Expédition et retours</a></li>
+            <li><a href="#">Modes de paiement</a></li>
+            <li><a href="#">Conditions Générales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>NOS PARTENAIRES</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">LEGO® Education</a></li>
+            <li><a href="#">LEGO Ideas</a></li>
+            <li><a href="#">LEGO Foundation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <span>SUIS-NOUS</span>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="copyright-bar">
+        <p>
+          © 2026 ALGO-LEGO. Tous droits réservés. Politique de confidentialité |
+          Cookies
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

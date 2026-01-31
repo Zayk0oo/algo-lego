@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ALGO-LEGO - Boutiques</title>
+    <link rel="icon" href="../Images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="accueil.html">
+          <img
+            src="../Images/logo.png"
+            alt="Logo ALGO-LEGO"
+            class="site-logo"
+          />
+        </a>
+        <span class="site-title">ALGO-LEGO</span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="boutique.html" class="active">Boutiques</a></li>
+          <li><a href="contact.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="boutique-hero">
+        <h1>Nos Boutiques</h1>
+        <p>Retrouvez l'univers ALGO-LEGO près de chez vous</p>
+      </section>
+
+      <div class="container">
+        <div id="boutique-list-view" class="boutiques-wrapper">
+          <div class="boutique-column-left">
+            <article class="card store-trigger" data-target="detail-paris">
+              <div class="image-box">
+                <img src="../Images/PARIS.png" alt="Paris" />
+              </div>
+              <div class="boutique-info">
+                <h3>Paris - Châtelet</h3>
+                <p>Le Flagship</p>
+              </div>
+            </article>
+
+            <article class="card store-trigger" data-target="detail-bordeaux">
+              <div class="image-box">
+                <img src="../Images/BORDEAUX.png" alt="Bordeaux" />
+              </div>
+              <div class="boutique-info">
+                <h3>Bordeaux - Ste-Catherine</h3>
+                <p>Promenade Ste-Catherine</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="boutique-column-right">
+            <article class="card store-trigger" data-target="detail-lyon">
+              <div class="image-box">
+                <img src="../Images/LYON.png" alt="Lyon" />
+              </div>
+              <div class="boutique-info">
+                <h3>Lyon - Part-Dieu</h3>
+                <p>Centre Commercial</p>
+              </div>
+            </article>
+
+            <article class="card store-trigger" data-target="detail-lille">
+              <div class="image-box">
+                <img src="../Images/LILLE.png" alt="Lille" />
+              </div>
+              <div class="boutique-info">
+                <h3>Lille - Euralille</h3>
+                <p>La brique du Nord</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div id="boutique-detail-view" class="hidden-view">
+          <button id="back-btn" class="back-arrow">
+            ← Retour aux boutiques
+          </button>
+
+          <div id="detail-paris" class="single-store-detail">
+            <h2>Paris - Châtelet les Halles</h2>
+            <img src="../Images/PARIS.png" class="full-img" alt="Paris" />
+            <div class="full-info-content">
+              <div class="info-block">
+                <h4>Adresse :</h4>
+                <p>Westfield Forum des Halles, 101 Porte Berger, 75001 Paris</p>
+              </div>
+              <div class="info-block">
+                <h4>Horaires :</h4>
+                <p>Lun - Sam : 10h00 - 20h30 / Dimanche : 11h00 - 19h00</p>
+              </div>
+              <div class="info-block description">
+                <h4>Spécialité :</h4>
+                <p>
+                  Venez admirer notre photomaton en briques et la reproduction
+                  géante de Notre-Dame !
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="detail-lyon" class="single-store-detail">
+            <h2>Lyon - La Part-Dieu</h2>
+            <img src="../Images/LYON.png" class="full-img" alt="Lyon" />
+            <div class="full-info-content">
+              <div class="info-block">
+                <h4>Adresse :</h4>
+                <p>Centre Commercial La Part-Dieu, Niveau 2, 69003 Lyon</p>
+              </div>
+              <div class="info-block">
+                <h4>Horaires :</h4>
+                <p>Lun - Sam : 09h30 - 20h00 / Dimanche : Fermé</p>
+              </div>
+              <div class="info-block description">
+                <h4>Spécialité :</h4>
+                <p>
+                  Le plus grand mur Pick & Build de la région pour choisir vos
+                  pièces en vrac.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="detail-bordeaux" class="single-store-detail">
+            <h2>Bordeaux - Sainte-Catherine</h2>
+            <img src="../Images/BORDEAUX.png" class="full-img" alt="Bordeaux" />
+            <div class="full-info-content">
+              <div class="info-block">
+                <h4>Adresse :</h4>
+                <p>Promenade Sainte-Catherine, Rue Guiraude, 33000 Bordeaux</p>
+              </div>
+              <div class="info-block">
+                <h4>Horaires :</h4>
+                <p>Tous les jours : 10h00 - 20h00 (Sauf dimanche matin)</p>
+              </div>
+              <div class="info-block description">
+                <h4>Spécialité :</h4>
+                <p>
+                  Découvrez notre fresque exclusive représentant les vignobles
+                  bordelais entièrement en LEGO.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="detail-lille" class="single-store-detail">
+            <h2>Lille - Euralille</h2>
+            <img src="../Images/LILLE.png" class="full-img" alt="Lille" />
+            <div class="full-info-content">
+              <div class="info-block">
+                <h4>Adresse :</h4>
+                <p>
+                  Centre Commercial Euralille, 100 Avenue Willy Brandt, 59777
+                  Lille
+                </p>
+              </div>
+              <div class="info-block">
+                <h4>Horaires :</h4>
+                <p>Lun - Sam : 10h00 - 20h00 / Dimanche : Fermé</p>
+              </div>
+              <div class="info-block description">
+                <h4>Spécialité :</h4>
+                <p>
+                  Atelier Minifigure Factory : Créez et imprimez votre propre
+                  figurine personnalisée sur place !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <img
+            src="../Images/logo.png"
+            alt="ALGO-LEGO Logo"
+            class="footer-logo"
+          />
+          <button class="region-btn">
+            <i class="fas fa-location-dot"></i> France
+          </button>
+          <ul class="footer-links-list">
+            <li><a href="#">Cartes-cadeaux</a></li>
+            <li><a href="catalogue.html">Catalogues ALGO-LEGO</a></li>
+            <li><a href="boutique.html">Trouve un ALGO-LEGO Store</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>À PROPOS DE NOUS</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">À propos du Groupe ALGO-LEGO</a></li>
+            <li><a href="#">Nouveautés ALGO-LEGO®</a></li>
+            <li><a href="#">Durabilité</a></li>
+            <li><a href="#">Transparence de la chaîne</a></li>
+            <li><a href="#">Certification produit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>AIDE</h4>
+          <ul class="footer-links-list">
+            <li><a href="contact.html">Contacte-nous</a></li>
+            <li><a href="#">Instructions de montage</a></li>
+            <li><a href="#">Pièces manquantes</a></li>
+            <li><a href="#">Expédition et retours</a></li>
+            <li><a href="#">Modes de paiement</a></li>
+            <li><a href="#">Conditions Générales</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>NOS PARTENAIRES</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">LEGO® Education</a></li>
+            <li><a href="#">LEGO Ideas</a></li>
+            <li><a href="#">LEGO Foundation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <span>SUIS-NOUS</span>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="copyright-bar">
+        <p>
+          © 2026 ALGO-LEGO. Tous droits réservés. Politique de confidentialité |
+          Cookies
+        </p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
